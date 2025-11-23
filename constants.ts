@@ -56,10 +56,12 @@ export const SHIRT_REGIONS: TemplateRegion[] = [
 
   // --- LEFT ARM (Bottom Right Quadrant) ---
   // Mapping logic: Take from Far Right of source image
+  // Order: Right (Inside), Front, Left (Outside), Back
+  { name: 'L.Arm Right', x: 271, y: 329, w: LIMB_W, h: LIMB_H, offsetX: 400, offsetY: 0, color: 'rgba(0, 255, 0, 0.3)' },
   { name: 'L.Arm Front', x: 335, y: 329, w: LIMB_W, h: LIMB_H, offsetX: 350, offsetY: 0, color: 'rgba(255, 0, 0, 0.3)' },
-  { name: 'L.Arm Back', x: 467, y: 329, w: LIMB_W, h: LIMB_H, offsetX: 350, offsetY: 0, color: 'rgba(0, 0, 255, 0.3)' },
-  { name: 'L.Arm Right', x: 533, y: 329, w: LIMB_W, h: LIMB_H, offsetX: 400, offsetY: 0, color: 'rgba(0, 255, 0, 0.3)' },
   { name: 'L.Arm Left', x: 401, y: 329, w: LIMB_W, h: LIMB_H, offsetX: 300, offsetY: 0, color: 'rgba(255, 255, 0, 0.3)' },
+  { name: 'L.Arm Back', x: 467, y: 329, w: LIMB_W, h: LIMB_H, offsetX: 350, offsetY: 0, color: 'rgba(0, 0, 255, 0.3)' },
+
   { name: 'L.Arm Up', x: 335, y: 265, w: LIMB_W, h: 64, offsetX: 350, offsetY: -350, color: 'rgba(0, 255, 255, 0.3)' },
   { name: 'L.Arm Down', x: 335, y: 457, w: LIMB_W, h: 64, offsetX: 350, offsetY: 350, color: 'rgba(255, 165, 0, 0.3)' },
 ];
